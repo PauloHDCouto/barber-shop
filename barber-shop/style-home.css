@@ -1,0 +1,43 @@
+body {
+    
+}
+#banner {
+    width: 100%;
+}
+.titulo-principal{
+    padding: 20px;
+}
+.principal {
+    background: #CCCCCC;
+    padding: 30px;
+}
+
+.Titulo-centralizado {
+    text-align: center
+}
+p {
+    text-align: center;
+}
+#missao { /* quando usamos o identificador  "id" usamos a tag */
+    font-size: 20px
+}
+em strong {
+    color: red;
+}
+.itens {  /* quando usamos classes  utilizamos o .(ponto) */
+    font-style: italic;
+}
+.beneficios {
+    background: #ffffff;
+    padding: 20px;
+}
+
+ul {
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+.imagembeneficios {
+    width: 50%;
+}

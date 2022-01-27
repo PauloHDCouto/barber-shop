@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Contato  - Barbearia Alura </title>
+
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href ="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="caixa">    
+                <h1><img src="logo.png" alt="Logo Barbearia Alura"></h1>
+
+                <nav>                                                                <!- representa elemento de navegação *//->
+                    <ul>
+                        <li><a href="index.html">        Home </a> </li>             <!- a é utilizado para criação de links *//->
+                        <li><a href="produtos.html"> Produtos </a> </li>
+                        <li><a href="contatos.html"> Contatos </a> </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <form> 
+                <label for="nomesobrenome"> Nome e Sobrenome </label>                                             <!- sao um par de informações sempre precisamos ter os dois->
+                <input type="text" id="nomesobrenome" class="input-padrao" required placeholder="Nome Sobrenome" ><!- criamos um identificador e ligamos ele ao label->
+                
+                <label for="email"> Email </label>
+                <input type="email" id="email" class="input-padrao" required placeholder="meusovos@dominio.com">  <!-required faz com que seja obrigatorio o preenchimento->
+                                                                                                                  <!-placeholder é a instrução que faz com que dentro das caixas fique um texto explicativo->       
+                <label for="telefone"> Telefone </label>
+                <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+
+                <label for="mensagem">Mensagem</label>
+                <textarea cols="70" rows="10" id="mensagem" class="input-padrao"></textarea>
+
+                <fieldset>                                                                                                  <!- fieldset substitui a div, pois é utilizado para grupar inf de algo especifico->                                                             
+                                                                                                                            <!- div criada para referenciar que as linhas de baixo pertencem a uma unica entrada de dados->
+                    <legend> Como prefere nosso contato? </legend>                                                          <!- legend substitui "p", pois dentro do fieldset é usado o legend->
+                                                                                                                            <!- neste ponto colocamos o "P" e nao o "label" pq lembrando, o label venm acompanhado de um input->
+
+                    <label for="radio-email"><input type="radio" name= "contato" value="email" id="radio-email""> Email</label>
+       
+                    <label for="radio-telefone"><input type="radio" name= "contato" value="telefone" id="radio-telefone"> Telefone</label>
+                                                                                                                            <!- a configuração ""name" neste ponto serve como um novo grupo->
+                                                                                                                            <!- e atraves dela podemos criar no formulario o selecionar apenas um->      
+                    <label for="radio-whatsapp"> <input type="radio" name= "contato" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
+                </fieldset>
+                <fieldset>
+                    <select>
+                    <p>Em qual horario prefere ser atendido?</p>    
+                        <option>Manhã</option>
+                        <option>Tarde</option>                                                                                  <!- option serve para criar uma seleção-> 
+                        <option>Noite</option>
+                    </select>
+                </fieldset>  
+
+                <label class="checkbox"><input type="checkbox" checked> Gostaria de receber nosssas novidades por email?</label><!- uma forma diferente de fazer com o mesmo resultado->
+                <input type="submit" value="Enviar Formulário" class="enviar">                                                                 <!- submit é o botão de enviar ->
+            </form> 
+            
+            <table>                                                                                 
+                <thead>                                                                       <!- table para criar tabela->   
+                    <tr>                                                                      <!- thead para criar cabeçalho->      
+                        <th>Dia</th>                                                          <!- th representa celula do cabeçalho-> 
+                        <th>Horário</th>                                                      <!- tr para criar linha->  
+                    </tr>                                                                     <!- td para criar celula->  
+                </thead>                                                                      <!- tbody para criar o corpo ->
+                <tbody>                                                                       <!- tfoot para mexer com rodapé->             
+                    <tr>                                                                        
+                        <td>Segunda</td>                                                                    
+                        <td>08h - 20h</td>                                                          
+                    </tr>
+                    <tr>
+                        <td>Quarta</td>
+                        <td>08h - 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Sexta</td>
+                        <td>08h - 20h</td>
+                    </tr>
+                </tbody>    
+            </table>
+        </main>
+
+
+        <footer>
+            <img src="logo-branco.png" alt="Logo Barbearia Alura">
+            <p class="copyright">&copy; Copyright Barbearia Alura "MEU OVO"- 2021</p>
+        </footer>
+
+    </body>
+</html>
