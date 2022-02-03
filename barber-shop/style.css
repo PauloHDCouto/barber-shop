@@ -261,8 +261,68 @@ td , th {
     margin: 1em auto;
     box-shadow: 10px 10px 30px #000000; /* utilizando este comando criamos sombras, eixo y(10) eixo x(10) e o 30 representa o espalhamento da sombra, por ultimo a cor*/
 }
+/* ////////////////////// adaptando para celular  /////////////////*/
+@media screen and (max-width: 900px){     /* ADAPTANDO PARA O CELULAR */
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video, .produtos, .produtos li  {
+        width: auto;
+        height: auto;
+        
+    }
+    h1 {
+        text-align: center;
+    }
+    nav {
+        position: static;
+        
+    }
+    div {
+        text-align: center;
+    }
+    .produtos li{
+        width: 20rem;
+        margin-top: 0.5rem;
+    }
 
-@media screen and (max-width: 480px){     /* ADAPTANDO PARA O CELULAR */
+    .mapa-conteudo {
+        width: 95%;
+    }
+    .imagem-beneficios, .lista-beneficios {
+        width: 100%;
+    }
+
+    .video{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 768px){     /* ADAPTANDO PARA O CELULAR */
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video, .produtos, .produtos li  {
+        width: auto;
+        height: auto;
+        
+    }
+    h1 {
+        text-align: center;
+    }
+    nav {
+        position: static;
+        
+    }
+    nav ul{
+        width: auto;
+        text-align: center;
+    }
+    .produtos li{
+        width: 20rem;
+        margin-top: 0.5rem;
+    }
+
+    .imagem-beneficios, .lista-beneficios {
+        width: 100%;
+    }
+
+}
+@media screen and (max-width: 480px){     
     .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video{
         width: auto;
     }
@@ -276,4 +336,4 @@ td , th {
         width: 100%
         ;
     }
-}
+} 
